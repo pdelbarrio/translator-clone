@@ -38,6 +38,7 @@ export const TextArea = ({ type, loading, value, onChange }: Props) => {
       as="textarea"
       disabled={type === SectionType.To}
       placeholder={getPlaceholder({ type, loading })}
+      // @ts-ignore
       style={styles}
       value={value}
       onChange={handleChange}
