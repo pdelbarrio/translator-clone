@@ -26,7 +26,7 @@ function App() {
     setResult,
   } = useStore()
 
-  const debouncedFromText = useDebounce(fromText)
+  const debouncedFromText = useDebounce(fromText, 300)
 
   useEffect(() => {
     if (debouncedFromText === '') return
@@ -73,7 +73,7 @@ function App() {
           </Stack>
         </Col>
 
-        <Col xs="auto">
+        <Col xs={12} md="auto">
           <Button
             variant="link"
             disabled={fromLanguage === AUTO_LANGUAGE}
