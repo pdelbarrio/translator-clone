@@ -18,7 +18,7 @@ const getPlaceholder = ({
   loading?: boolean
 }) => {
   if (type === SectionType.From) return 'Introducir texto'
-  if (loading === true) return 'Cargando...'
+  if (loading === true) return 'Traduciendo...'
   return 'Traducción'
 }
 
